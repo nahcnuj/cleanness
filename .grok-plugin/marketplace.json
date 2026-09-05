@@ -13,18 +13,14 @@
       "version": "1.0.0",
       "source": {
         "type": "local",
-        "path": "./"
+        "path": "./plugins/cleanness"
       },
       "homepage": "https://github.com/nahcnuj/cleanness",
       "keywords": [
-        "clean-code",
-        "code-quality",
-        "cohesion",
-        "coupling",
-        "encapsulation",
-        "assertive",
-        "nonredundant",
-        "review",
+        "cleanness",
+        "cleanness score",
+        "CLEAN code",
+        "cleanness plugin",
         "claude-code",
         "grok-build"
       ],
