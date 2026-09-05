@@ -12,7 +12,7 @@ metadata:
   short-description: "Measure CLEAN code quality"
   author: nahcnuj
   version: "1.0.0"
-argument-hint: "[path-or-scope]"
+  argument-hint: "[path-or-scope]"
 ---
 
 # CLEAN code quality measurement
