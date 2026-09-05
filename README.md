@@ -85,13 +85,18 @@ npm run validate:skill
 
 GitHub Actions（`.github/workflows/ci.yml`）では次を検証します。
 
-- マーケットプレイス / プラグイン JSON とパス解決
-- `SKILL.md` の frontmatter・5軸・レポートテンプレート
-- ルーブリックの 1–5 バンド網羅
-- `tests/fixtures/reports/` の CLEAN レポート契約
-- `agentskills validate` による仕様準拠
+- マーケットプレイス / プラグイン JSON とパス解決、**バージョン同期**（marketplace ↔ 各 `plugin.json` ↔ SKILL metadata）
+- `SKILL.md` の frontmatter 基本項目・5軸・レポートテンプレート
+- ルーブリックの **軸ごと** 1–5 バンド網羅
+- `tests/fixtures/reports/` の CLEAN レポート契約:
+  - 必須見出し / 5軸スコアセル
+  - 総合点が5軸平均（小数第1位）と一致すること
+  - Evidence が軸ごとの `###` 見出しを持つこと
+  - スコアが 5 未満の軸に `` `path:line` `` 引用があること
+  - `Scope` が `tests/fixtures/...` を指す場合、そのパスが存在すること
+- `agentskills validate` による Agent Skills 仕様準拠（YAML allowlist などはこちら）
 
-LLM 呼び出しはしません。採点そのものの回帰はフィクスチャのレポート形状で担保します。
+LLM 呼び出しはしません。採点判断そのものは CI 対象外で、レポートの算術・構造契約だけを機械検証します。
 
 ## License
 
