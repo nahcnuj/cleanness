@@ -1,5 +1,7 @@
 # cleanness
 
+[![CI](https://github.com/nahcnuj/cleanness/actions/workflows/ci.yml/badge.svg)](https://github.com/nahcnuj/cleanness/actions/workflows/ci.yml)
+
 コード品質を **CLEAN** の5軸で計測する Agent Skill / プラグインです。
 
 | 軸 | 意味 |
@@ -63,7 +65,33 @@ plugins/cleanness/
   skills/cleanness/
     SKILL.md
     references/clean-rubric.md
+scripts/validate.mjs              # CI 用の構造検証
+tests/fixtures/                   # レポート契約とサンプルコード
 ```
+
+## Development / CI
+
+ローカルで CI と同じ構造チェックを実行:
+
+```bash
+npm test
+```
+
+Agent Skills 仕様チェック（[skills-ref](https://github.com/agentskills/agentskills)）:
+
+```bash
+npm run validate:skill
+```
+
+GitHub Actions（`.github/workflows/ci.yml`）では次を検証します。
+
+- マーケットプレイス / プラグイン JSON とパス解決
+- `SKILL.md` の frontmatter・5軸・レポートテンプレート
+- ルーブリックの 1–5 バンド網羅
+- `tests/fixtures/reports/` の CLEAN レポート契約
+- `agentskills validate` による仕様準拠
+
+LLM 呼び出しはしません。採点そのものの回帰はフィクスチャのレポート形状で担保します。
 
 ## License
 
