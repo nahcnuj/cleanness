@@ -1,0 +1,38 @@
+{
+  "name": "cleanness",
+  "description": "CLEAN code quality measurement — Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant. Works with Claude Code and Grok Build.",
+  "owner": {
+    "name": "Junichi Hayashi",
+    "url": "https://github.com/nahcnuj"
+  },
+  "plugins": [
+    {
+      "name": "cleanness",
+      "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis 1–5 with evidence and remediations.",
+      "category": "development",
+      "version": "1.0.0",
+      "source": {
+        "type": "local",
+        "path": "./plugins/cleanness"
+      },
+      "homepage": "https://github.com/nahcnuj/cleanness",
+      "keywords": [
+        "clean-code",
+        "code-quality",
+        "cohesion",
+        "coupling",
+        "encapsulation",
+        "assertive",
+        "nonredundant",
+        "review",
+        "claude-code",
+        "grok-build"
+      ],
+      "author": {
+        "name": "Junichi Hayashi",
+        "url": "https://github.com/nahcnuj"
+      },
+      "license": "MIT"
+    }
+  ]
+}

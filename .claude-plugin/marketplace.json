@@ -1,0 +1,40 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cleanness",
+  "description": "CLEAN code quality measurement — Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant. Works with Claude Code and Grok Build.",
+  "owner": {
+    "name": "Junichi Hayashi",
+    "url": "https://github.com/nahcnuj"
+  },
+  "metadata": {
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "cleanness",
+      "source": "./plugins/cleanness",
+      "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis 1–5 with evidence and remediations.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Junichi Hayashi",
+        "url": "https://github.com/nahcnuj"
+      },
+      "homepage": "https://github.com/nahcnuj/cleanness",
+      "repository": "https://github.com/nahcnuj/cleanness",
+      "license": "MIT",
+      "category": "development",
+      "keywords": [
+        "clean-code",
+        "code-quality",
+        "cohesion",
+        "coupling",
+        "encapsulation",
+        "assertive",
+        "nonredundant",
+        "review",
+        "claude-code",
+        "grok-build"
+      ]
+    }
+  ]
+}

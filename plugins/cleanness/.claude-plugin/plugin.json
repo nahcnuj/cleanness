@@ -1,0 +1,22 @@
+{
+  "name": "cleanness",
+  "version": "1.0.0",
+  "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis with evidence and remediations.",
+  "author": {
+    "name": "Junichi Hayashi",
+    "url": "https://github.com/nahcnuj"
+  },
+  "homepage": "https://github.com/nahcnuj/cleanness",
+  "repository": "https://github.com/nahcnuj/cleanness",
+  "license": "MIT",
+  "keywords": [
+    "clean-code",
+    "code-quality",
+    "cohesion",
+    "coupling",
+    "encapsulation",
+    "review",
+    "claude-code",
+    "grok-build"
+  ]
+}
