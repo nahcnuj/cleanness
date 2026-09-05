@@ -20,23 +20,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
 
       - name: Setup uv
         uses: astral-sh/setup-uv@v6
+
+      - name: Install (lockfile)
+        run: npm ci
 
       - name: Structural checks
         run: npm test
 
       - name: Agent Skills spec (skills-ref)
         run: uvx --from skills-ref agentskills validate plugins/cleanness/skills/cleanness
-
-      - name: Plugin layout smoke check
-        run: |
-          test -f plugins/cleanness/.claude-plugin/plugin.json
-          test -f plugins/cleanness/.grok-plugin/plugin.json
-          test -f plugins/cleanness/skills/cleanness/SKILL.md
-          test -f plugins/cleanness/skills/cleanness/references/clean-rubric.md
-          test -f .claude-plugin/marketplace.json
-          test -f .grok-plugin/marketplace.json
-          node -e "JSON.parse(require('fs').readFileSync('.claude-plugin/marketplace.json','utf8'))"
-          node -e "JSON.parse(require('fs').readFileSync('.grok-plugin/marketplace.json','utf8'))"

@@ -5,7 +5,7 @@
   "description": "CLEAN code quality measurement skill / marketplace",
   "type": "module",
   "scripts": {
-    "test": "node scripts/validate.mjs",
+    "test": "npm run validate",
     "validate": "node scripts/validate.mjs",
     "validate:skill": "uvx --from skills-ref agentskills validate plugins/cleanness/skills/cleanness"
   },
