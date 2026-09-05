@@ -13,7 +13,7 @@
       "version": "1.0.0",
       "source": {
         "type": "local",
-        "path": "./plugins/cleanness"
+        "path": "./"
       },
       "homepage": "https://github.com/nahcnuj/cleanness",
       "keywords": [

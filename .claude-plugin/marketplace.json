@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "cleanness",
-      "source": "./plugins/cleanness",
+      "source": "./",
       "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis 1–5 with evidence and remediations.",
       "version": "1.0.0",
       "author": {
