@@ -10,7 +10,7 @@
       "name": "cleanness",
       "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis 1–5 with evidence and remediations.",
       "category": "development",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "source": {
         "type": "local",
         "path": "./plugins/cleanness"

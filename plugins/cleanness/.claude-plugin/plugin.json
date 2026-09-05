@@ -1,6 +1,6 @@
 {
   "name": "cleanness",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis with evidence and remediations.",
   "author": {
     "name": "Junichi Hayashi",

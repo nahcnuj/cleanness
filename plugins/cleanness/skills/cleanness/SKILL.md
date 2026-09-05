@@ -11,7 +11,7 @@ compatibility: Works with Claude Code and Grok Build via Agent Skills (SKILL.md)
 metadata:
   short-description: "Measure CLEAN code quality"
   author: nahcnuj
-  version: "1.0.0"
+  version: "1.0.1"
   argument-hint: "[path-or-scope]"
 ---
 
