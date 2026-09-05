@@ -7,14 +7,14 @@
     "url": "https://github.com/nahcnuj"
   },
   "metadata": {
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "cleanness",
       "source": "./plugins/cleanness",
       "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis 1–5 with evidence and remediations.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Junichi Hayashi",
         "url": "https://github.com/nahcnuj"
