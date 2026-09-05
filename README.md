@@ -31,9 +31,12 @@ grok plugin install cleanness --trust
 
 TUI では `/marketplace` から追加・インストールもできます。
 
+公式 xAI カタログへの掲載 PR: https://github.com/xai-org/plugin-marketplace/pull/570  
+（マージ後は `grok plugin install cleanness --trust` だけでインストールできます）
+
 ### 手動（プロジェクトローカル）
 
-`skills/cleanness/` を `.claude/skills/cleanness/` または `.grok/skills/cleanness/` にコピー（またはシンボリックリンク）してください。
+`plugins/cleanness/skills/cleanness/` を `.claude/skills/cleanness/` または `.grok/skills/cleanness/` にコピー（またはシンボリックリンク）してください。
 
 ## Usage
 
@@ -52,15 +55,14 @@ TUI では `/marketplace` から追加・インストールもできます。
 ## Layout
 
 ```text
-.claude-plugin/
-  marketplace.json   # Claude Code 用カタログ
-  plugin.json
-.grok-plugin/
-  marketplace.json   # Grok Build 用カタログ
-  plugin.json
-skills/cleanness/
-  SKILL.md
-  references/clean-rubric.md
+.claude-plugin/marketplace.json   # Claude Code 用カタログ
+.grok-plugin/marketplace.json     # Grok Build 用カタログ
+plugins/cleanness/
+  .claude-plugin/plugin.json
+  .grok-plugin/plugin.json
+  skills/cleanness/
+    SKILL.md
+    references/clean-rubric.md
 ```
 
 ## License

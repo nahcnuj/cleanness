@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "cleanness",
-      "source": "./",
+      "source": "./plugins/cleanness",
       "description": "Measure code quality with CLEAN (Cohesive, Loosely coupled, Encapsulated, Assertive, Nonredundant). Scores each axis 1–5 with evidence and remediations.",
       "version": "1.0.0",
       "author": {
@@ -24,14 +24,10 @@
       "license": "MIT",
       "category": "development",
       "keywords": [
-        "clean-code",
-        "code-quality",
-        "cohesion",
-        "coupling",
-        "encapsulation",
-        "assertive",
-        "nonredundant",
-        "review",
+        "cleanness",
+        "cleanness score",
+        "CLEAN code",
+        "cleanness plugin",
         "claude-code",
         "grok-build"
       ]
